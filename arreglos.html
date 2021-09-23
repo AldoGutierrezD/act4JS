@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>ARREGLOS</title>
+</head>
+<body>
+    <script src="js/arreglos.js"></script>
+    <section class="contenedor-superior">
+        <h1>Actividad 4. Ejercicios</h1>
+    </section>
+    <!--MENÚ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">INCIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ifelse.html">IF-ELSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="whileFor.html">WHILE & FOR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="arreglos.html">ARREGLOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <section class="contenido">
+        <!--ARREGLO INICIAL-->
+        <article class="contenedor">
+            <h4>FRUTAS Y VERDURAS</h4>
+            <p>Manzana, Sandia, Melón, Platano, Naranja, Pera, Limón, Jitomate, Brocoli, Zanahoria, Papa</p>
+        </article>
+        <article class="contenedor">
+          <h4>ACCIONES</h4>
+          <select id="funciones" class="funcionesArreglos">
+            <option value="0" selected>Seleccione una función</option>
+            <option value="pop">Pop</option>
+            <option value="shift">Shift</option>
+            <option value="push">Push</option>
+            <option value="unshift">Unshift</option>
+            <option value="splice">Splice</option>
+            <option value="delete">Delete</option>
+            <option value="reverse">Reverse</option>
+            <option value="sort">Sort</option>
+            <option value="concat">Concat</option>
+            <option value="join">Join</option>
+            <option value="length">Length</option>
+          </select>
+          <a class="cajas" onclick="funcionesArreglos()">Ejecutar</a>
+      </article>
+    </section>
+    <footer>
+      <section id="resultado" class="res">Resultados</section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

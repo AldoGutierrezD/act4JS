@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: teal;
+}
+
+.contenedor-superior{
+    width: 100vw;
+    height: 100px;
+    text-align: center;
+    background-color: rgb(6, 122, 138);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-menu{
+    font-size: 35px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.icon-menu:hover{
+    color: rgb(90, 90, 90);
+}
+
+.contenido{
+    width: 100%;
+    height: 300px;
+    background:url(../rsc/fondo.jpg) no-repeat center fixed;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenedor{
+    width: 400px;
+    height: 220px;
+    border-radius: 10px;
+    background-color: rgb(194, 167, 128);
+    padding: 10px;
+    margin: 10px auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+input[type="text"],input[type="number"], .zonasVotos, .funcionesArreglos{
+    width: 85%;
+    padding: 5px;
+    margin-bottom: 10px;
+    display: block;
+    border: none;
+    margin: 5px auto;
+    border-radius: 8px;
+    color: black;
+}
+
+input[type="button"], input[type="submit"], .cajas{
+    width: 87%;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin: 5px auto;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.1rem;
+    text-align: center;
+    color: black;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover, .cajas:hover{
+    background-color: rgb(162, 187, 235);
+}
+
+/*****************************DIBUJAR CAJAS********************************/
+.cajaVertical{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: #f3c623;
+    background-color: #10375C;
+}
+
+.cajaHorizontal{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: #10375C;
+    background-color: #f3c623;
+    display: inline-block;
+}
+
+/*****************FORMULARIO*****************/
+.contenedor-form{
+    z-index: 1;
+}
+
+.formulario{
+    background-color: #3c7ab4;
+    padding: 5px;
+    margin-right: 15px;
+}
+
+.correos, .contras{
+    width: 87%;
+    border-radius: 5px;
+    border: none;
+    margin: 5px;
+    margin-left: 20px;
+    padding: 4px;
+}
+
+.res{
+    width: 807px;
+    background-color: beige;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    color: black;
+    word-wrap: break-word;
+}

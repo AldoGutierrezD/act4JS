@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <script src="js/appIndex.js"></script>
+    
+    <section class="contenedor-superior">
+        <h1>Actividad 4. Ejercicios</h1>
+    </section>
+    <!--MENÚ-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">INCIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="ifelse.html">IF-ELSE</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="whileFor.html">WHILE & FOR</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="arreglos.html">ARREGLOS</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="contenedor-form">
+          <i class="fas fa-caret-square-down icon-menu" id="icono" onclick="ocultar_mostrar()"></i>
+          <form action="" method="GET" id="form" class="formulario">
+            <input type="email" id="correo" name="correo" class="correos" placeholder="Correo electrónico">
+            <input type="password" id="contra" name="contra" class="contras" placeholder="Contraseña">
+            <input type="submit" value="Iniciar Sesión">
+          </form>
+        </div>
+    </nav>
+    <section class="contenido">
+        <!--DIBUJAR CAJAS-->
+        <article class="contenedor">
+            <h4>CREAR CAJAS</h4>
+            <h5>*Este ejercicio usa el prompt</h5>
+            <a class="cajas" onclick="dibujarCajas()">Dibujar</a>
+        </article>
+        <!--VOTOS-->
+        <article class="contenedor">
+          <h4>VOTOS</h4>
+          <select id="zonas" class="zonasVotos">
+            <option value="0" selected>Seleccione una zona</option>
+            <option value="norte">Norte</option>
+            <option value="sur">Sur</option>
+            <option value="centro">Centro</option>
+          </select>
+          <input type="radio" name="candidato" value="Candidato: 1" checked> Candidato 1
+          <input type="radio" name="candidato" value="Candidato: 2" > Candidato 2 <br>
+          <input type="radio" name="candidato" value="Candidato: 3" > Candidato 3 
+          <input type="radio" name="candidato" value="Candidato: 4" > Candidato 4 
+          <a class="cajas" onclick="votosCandidatos()">Votar</a>
+        </article>
+        <!--SUMA DE NÚMEROS-->
+        <article class="contenedor">
+          <h4>SUMATORIA</h4>
+          <h5>*Este ejercicio usa el prompt</h5>
+          <a class="cajas" onclick="sumatoria()">Sumar</a>
+      </article>
+    </section>
+    <footer>
+      <section id="resultado" class="res">Resultados</section>
+    </footer>
+    <script src="js/form.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
